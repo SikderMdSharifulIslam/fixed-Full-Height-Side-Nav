@@ -10,6 +10,7 @@ ul {
     text-align: center;
     position: fixed;
     height: 100%;
+    overflow: auto;
 }
 
 li a {
@@ -21,4 +22,36 @@ li a {
 
 li a:hover {
     background-color: greenyellow;
+}
+
+div {
+    margin-left: 20%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+
+@media screen and (max-width:900px) {
+    ul {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    ul li a {
+        float: left;
+        padding: 15px;
+    }
+
+    div {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:400px) {
+    ul li a {
+        text-align: center;
+        float: none;
+    }
+
 }
